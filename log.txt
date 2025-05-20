@@ -7,3 +7,5 @@
 [2025-05-20 03:08:51] [INFO] Operacja: Negatyw, Czas: 1930 ms
 [2025-05-20 03:08:55] [INFO] Operacja: Zapisano obraz do pliku: test.jpg, Czas: 110 ms
 [2025-05-20 03:09:02] [INFO] Operacja: Aplikacja zamknięta, Czas: 0 ms
+[2025-05-20 03:23:36] [INFO] Operacja: Aplikacja uruchomiona, Czas: 0 ms
+[2025-05-20 03:23:40] [INFO] Operacja: Aplikacja zamknięta, Czas: 0 ms
