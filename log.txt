@@ -1,0 +1,9 @@
+[2025-05-20 03:08:19] [INFO] Operacja: Aplikacja uruchomiona, Czas: 0 ms
+[2025-05-20 03:08:21] [INFO] Operacja: Aplikacja zamknięta, Czas: 0 ms
+[2025-05-20 03:08:26] [INFO] Operacja: Aplikacja uruchomiona, Czas: 0 ms
+[2025-05-20 03:08:37] [INFO] Operacja: Wczytano obraz: most_karola.jpg, Czas: 98 ms
+[2025-05-20 03:08:39] [INFO] Operacja: Obrócono obraz w prawo, Czas: 504 ms
+[2025-05-20 03:08:43] [INFO] Operacja: Obrócono obraz w lewo, Czas: 497 ms
+[2025-05-20 03:08:51] [INFO] Operacja: Negatyw, Czas: 1930 ms
+[2025-05-20 03:08:55] [INFO] Operacja: Zapisano obraz do pliku: test.jpg, Czas: 110 ms
+[2025-05-20 03:09:02] [INFO] Operacja: Aplikacja zamknięta, Czas: 0 ms
