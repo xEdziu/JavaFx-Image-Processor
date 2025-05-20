@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="dev.goral.javafximageprocessor.HelloController">
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="dev.goral.javafximageprocessor.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+  <top>
+    <VBox spacing="5" alignment="CENTER">
+      <Label text="Witaj - Edytor obrazów w JavaFX" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+      <ImageView fx:id="logoImageView" fitHeight="80" preserveRatio="true"/>
+    </VBox>
+  </top>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+  <center>
+    <HBox spacing="10" alignment="CENTER">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+      </padding>
+      <ImageView fx:id="originalImageView" fitWidth="300" preserveRatio="true"/>
+      <ImageView fx:id="processedImageView" fitWidth="300" preserveRatio="true"/>
+    </HBox>
+  </center>
+
+  <bottom>
+    <VBox spacing="5">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+      </padding>
+      <HBox spacing="10" alignment="CENTER">
+        <Button text="Wczytaj obraz" onAction="#onLoadImage"/>
+        <Button text="Skaluj obraz" onAction="#onScaleImage" fx:id="scaleButton" disable="true"/>
+        <Button text="Zapisz obraz" onAction="#onSaveImage" fx:id="saveButton" disable="true"/>
+        <Button fx:id="rotateLeftButton" text="↺ 90° Lewo" onAction="#onRotateLeft" disable="true"/>
+        <Button fx:id="rotateRightButton" text="90° Prawo ↻" onAction="#onRotateRight" disable="true"/>
+      </HBox>
+      <HBox spacing="10" alignment="CENTER">
+        <ComboBox fx:id="operationComboBox" promptText="Wybierz operację"/>
+        <Button text="Wykonaj" onAction="#onApplyOperation"/>
+      </HBox>
+      <Label fx:id="footerLabel" text="Autor: Adrian Goral 272545" alignment="CENTER"/>
+    </VBox>
+  </bottom>
+
+</BorderPane>
